@@ -56,7 +56,7 @@ const Users = () => {
   const { isLoading, data } = useQuery({
     queryKey: ["allusers"],
     queryFn: () =>
-      fetch("http://localhost:4000/api/users").then(
+      fetch("http://24.199.109.40/api/users").then(
         (res) => res.json()
       ),
   });
